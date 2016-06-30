@@ -348,7 +348,7 @@
 					<h1>Q & A</h1>
 				</section>
 				<!-- 前端 & 後端 -->
-				<section data-transition="slide" data-background="#4d7e65">
+				<section data-transition="slide" data-background="#499696">
 					<section>
 						<h1>網頁工程的分工</h1>
 						<ul class="fragment">
@@ -378,14 +378,14 @@
 						<ul>
 							<li class="fragment">MVC（Model View Controller）等設計模式被發明</li>
 							<li class="fragment">AJAX技術盛行</li>
-							<li class="fragment">使用者介面複雜度提高</li>
+							<li class="fragment">使用者介面(UI)複雜度提高</li>
 							<li class="fragment">便於維護</li>
 						</ul>
 					</section>
 				</section>
 
 				<!-- HTML 標籤 -->
-				<section data-transition="slide" data-background="#b5533c">
+				<section data-transition="slide" data-background="#499696">
 					<section>
 						<h1>HTML 標籤</h1>
 					</section>
@@ -433,10 +433,10 @@
 					</section>
 				</section>
 
-				<!-- HTML 標籤 -->
-				<section data-transition="slide" data-background="#b5533c">
+				<!-- HTML 標籤(Document) -->
+				<section data-transition="slide" data-background="#499696">
 					<section>
-						<h1>常用的標籤</h1>
+						<h1>文件的標籤</h1>
 					</section>
 
 					<section>
@@ -487,6 +487,371 @@
 					</section>
 				</section>
 
+				<!-- HTML 標籤(Content) -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>放在 HEAD 中的標籤</h1>
+					</section>
+
+					<section>
+						<h3>META</h3>
+						<p>meta 標籤的用處非常廣泛，可運用在SEO、網頁描述、介紹、作者...等，分享到 FB 上的資訊也可經由 meta 標籤設定。</p>
+						<pre><code data-trim data-noescape>
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;description&quot; content=&quot;Free Web tutorials&quot;&gt;
+ &lt;meta name=&quot;keywords&quot; content=&quot;HTML,CSS,XML,JavaScript&quot;&gt;
+ &lt;meta name=&quot;author&quot; content=&quot;Hege Refsnes&quot;&gt;
+&lt;/head&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>LINK</h3>
+						<p>用來讀取外部的 CSS 樣式檔案。</p>
+						<pre><code data-trim data-noescape>
+&lt;head&gt;
+&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;type=&quot;text/css&quot;&nbsp;href=&quot;theme.css&quot;&gt;
+&lt;/head&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>STYLE</h3>
+						<p>可直接在頁面上撰寫 CSS 樣式，但別的頁面就沒辦法讀到，如果有共用的樣式，使用 LINK 標籤匯入較方便日後修改。</p>
+						<pre><code data-trim data-noescape>
+&lt;style&nbsp;media=&quot;screen&quot;&gt;
+ .list&nbsp;{
+  background-color:&nbsp;#ffffff;
+ }
+&lt;/style&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>SCRIPT</h3>
+						<p>可以直接撰寫腳本語言，或著寫在外部用 script 標籤來引入檔案。</p>
+						<pre><code data-trim data-noescape>
+&lt;script&gt;
+&nbsp;document.getElementById(&quot;demo&quot;).innerHTML&nbsp;=&nbsp;&quot;Hello&nbsp;JavaScript!&quot;;
+&lt;/script&gt;
+
+&lt;!--&nbsp;HTML4&nbsp;and&nbsp;(x)HTML&nbsp;--&gt;
+&lt;script&nbsp;type=&quot;text/javascript&quot;&nbsp;src=&quot;javascript.js&quot;&gt;&lt;/script&gt;
+
+&lt;!--&nbsp;HTML5&nbsp;--&gt;
+&lt;script&nbsp;src=&quot;javascript.js&quot;&gt;&lt;/script&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>範例</h3>
+						<p>動手做做看，5分鐘。</p>
+						<pre><code data-trim data-noescape>
+&lt;head&gt;
+&nbsp;&lt;meta&nbsp;charset=&quot;UTF-8&quot;&gt;
+&nbsp;&lt;meta&nbsp;name=&quot;description&quot;&nbsp;content=&quot;Free&nbsp;Web&nbsp;tutorials&quot;&gt;
+&nbsp;&lt;meta&nbsp;name=&quot;keywords&quot;&nbsp;content=&quot;HTML,CSS,XML,JavaScript&quot;&gt;
+&nbsp;&lt;meta&nbsp;name=&quot;author&quot;&nbsp;content=&quot;Hege&nbsp;Refsnes&quot;&gt;
+&nbsp;&lt;title&gt;金門&lt;/title&gt;
+&nbsp;&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css&quot;&gt;
+&nbsp;&lt;script&nbsp;src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&nbsp;&lt;script&nbsp;type=&quot;text/javascript&quot;&gt;
+&nbsp;&nbsp;var&nbsp;MyVar&nbsp;=&nbsp;0;
+&nbsp;&lt;/script&gt;
+&lt;/head&gt;
+						</code></pre>
+					</section>
+				</section>
+
+				<!-- HTML 標籤(文章結構) -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>BODY 中常用的標籤</h1>
+					</section>
+
+					<section>
+						<h3>H1...H6</h3>
+						<p>標題標籤，h1 為最大，內容中如果作為標題的文字，建議使用標題標籤包覆。</p>
+						<pre><code data-trim data-noescape>
+&lt;h1&gt;文章1&lt;/h1&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>DIV</h3>
+						<p>使用頻率最高的標籤，可以把它當作其他任意內文標籤使用，但不建議(後面說明)。</p>
+						<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&lt;div&gt;文章1&lt;/div&gt;
+&nbsp;&lt;div&gt;今天天氣真晴朗&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>P</h3>
+						<p>一段文字的描述，會使用此標籤包覆。</p>
+						<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&lt;h1&gt;文章1&lt;/h1&gt;
+&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&lt;p&gt;今天天氣真晴朗&lt;/p&gt;
+&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>SPAN</h3>
+						<p>一段文字中，有些需要特別樣式的文字，可以用此標籤。</p>
+						<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&lt;h1&gt;文章1&lt;/h1&gt;
+&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&lt;p&gt;&lt;span&gt;最新!&lt;/span&gt;今天天氣真晴朗&lt;/p&gt;
+&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>LINK</h3>
+						<p>連結到其他網址使用。</p>
+						<pre><code data-trim data-noescape>
+&lt;!--&nbsp;LINK&nbsp;--&gt;
+&lt;a&nbsp;href=&quot;https://www.facebook.com/&quot;&nbsp;name=&quot;fb_link&quot;&gt;facebook&lt;/a&gt;
+&lt;!--&nbsp;EMAIL&nbsp;--&gt;
+&lt;a&nbsp;href=&quot;mailto:azraelxuan927@gmail.com&quot;&gt;azraelxuan927@gmail.com&lt;/a&gt;
+&lt;!--&nbsp;錨點&nbsp;--&gt;
+&lt;a&nbsp;href=&quot;#question1&quot;&gt;移動到問題一&lt;/a&gt;
+&lt;div&nbsp;id=&quot;question1&quot;&gt;1.&nbsp;為什麼不要都用DIV?&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>IMG</h3>
+						<p>顯示圖片使用此標籤。</p>
+						<pre><code data-trim data-noescape>
+&lt;img&nbsp;src=&quot;img/htmlTagPostExample.png&quot;&nbsp;alt=&quot;&quot;&nbsp;/&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>為什麼不建議都用 DIV 標籤?</h2>
+						<p>全部都使用 div 標籤，沒有辦法一眼看出整個架構，會讓維護的效率降低，因此，語意化結構就非常重要。</p>
+						<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&lt;div&gt;文章1&lt;/div&gt;
+&nbsp;&lt;div&gt;&lt;div&gt;最新!&lt;/div&gt;今天天氣真晴朗&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+						<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&lt;h1&gt;文章1&lt;/h1&gt;
+&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&lt;p&gt;&lt;span&gt;最新!&lt;/span&gt;今天天氣真晴朗&lt;/p&gt;
+&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>動手試試看(10分鐘)</h3>
+						<img src="img/htmlTagPostExample.png" alt="" />
+						<ul>
+							<li>1. 請上網找一篇文章，並運用上述標籤把文章結構完成。</li>
+							<li>2. 需符合語意化結構</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- HTML 標籤(列表) -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>表格,列表,表單標籤</h1>
+					</section>
+
+					<section>
+						<h3>UL, OL</h3>
+						<p>li 列表的外框，OL會自動產生編號，UL則為符號。</p>
+						<pre><code data-trim data-noescape>
+&lt;ol&gt;
+&nbsp;&nbsp;&lt;li&gt;A&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;B&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;C&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;D&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;E&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&nbsp;&nbsp;&lt;li&gt;A&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;B&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;C&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;D&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;E&lt;/li&gt;
+&lt;/ul&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/jrBmyy" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>LI</h3>
+						<p>列表項目。</p>
+						<pre><code data-trim data-noescape>
+&lt;ul&gt;
+&nbsp;&nbsp;&lt;li&gt;A&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;B&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;C&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;D&lt;/li&gt;
+&nbsp;&nbsp;&lt;li&gt;E&lt;/li&gt;
+&lt;/ul&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>TABLE</h3>
+						<p>表格</p>
+						<pre><code data-trim data-noescape>
+&lt;table&gt;
+&nbsp;&lt;thead&gt;
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;ISBN&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Title&lt;/th&gt;
+&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&lt;/thead&gt;
+&nbsp;&nbsp;&lt;tbody&gt;
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3476896&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;My&nbsp;first&nbsp;HTML&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;5869207&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;My&nbsp;first&nbsp;CSS&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&lt;/tbody&gt;
+&nbsp;&nbsp;&lt;tfoot&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;ISND&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;TITLE&lt;/td&gt;
+&nbsp;&nbsp;&nbsp;&lt;/tr&gt;
+&nbsp;&nbsp;&lt;/tfoot&gt;
+&lt;/table&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/WxpjXR?editors=1000" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>FORM</h3>
+						<p>表單</p>
+						<pre><code data-trim data-noescape>
+&lt;form&nbsp;action=&quot;demo_form.asp&quot;&nbsp;method=&quot;get&quot;&gt;
+&nbsp;&nbsp;姓名:&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;name=&quot;name&quot;&gt;&lt;br&gt;
+&nbsp;&nbsp;電話:&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;name=&quot;phone&quot;&gt;&lt;br&gt;
+&nbsp;&nbsp;&lt;input&nbsp;type=&quot;submit&quot;&nbsp;value=&quot;送出&quot;&gt;
+&lt;/form&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/MepxOZ?editors=1000" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>INPUT</h3>
+						<p>輸入框</p>
+						<pre><code data-trim data-noescape>
+name:&nbsp;&lt;input&nbsp;type=&quot;text&quot;&nbsp;name=&quot;name&quot;&gt;&lt;br&nbsp;/&gt;
+password:&nbsp;&lt;input&nbsp;type=&quot;password&quot;&nbsp;name=&quot;pwd&quot;&gt;&lt;br&nbsp;/&gt;
+&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;num&quot;&nbsp;value=&quot;1&quot;&gt;&nbsp;1
+&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;num&quot;&nbsp;value=&quot;2&quot;&gt;&nbsp;2
+&lt;input&nbsp;type=&quot;radio&quot;&nbsp;name=&quot;num&quot;&nbsp;value=&quot;3&quot;&gt;&nbsp;3
+&lt;input&nbsp;type=&quot;submit&quot;&nbsp;value=&quot;送出&quot;&gt;&lt;br&nbsp;/&gt;
+&lt;input&nbsp;type=&quot;button&quot;&nbsp;name=&quot;name&quot;&nbsp;value=&quot;GO&quot;&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/Mepxdd" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>TEXTAREA</h3>
+						<p>文字區塊</p>
+						<pre><code data-trim data-noescape>
+&lt;textarea&nbsp;rows=&quot;4&quot;&nbsp;cols=&quot;50&quot;&gt;
+網頁課程
+&lt;/textarea&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/KrmdPy" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>SELECT</h3>
+						<p>下拉選單</p>
+						<pre><code data-trim data-noescape>
+&lt;select&gt;
+&nbsp;&nbsp;&lt;option&nbsp;value=&quot;1&quot;&gt;1&lt;/option&gt;
+&nbsp;&nbsp;&lt;option&nbsp;value=&quot;2&quot;&gt;2&lt;/option&gt;
+&nbsp;&nbsp;&lt;option&nbsp;value=&quot;3&quot;&gt;3&lt;/option&gt;
+&nbsp;&nbsp;&lt;option&nbsp;value=&quot;4&quot;&gt;4&lt;/option&gt;
+&lt;/select&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/KrmdPy" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>BUTTON</h3>
+						<p>按鈕</p>
+						<pre><code data-trim data-noescape>
+&lt;button&nbsp;type=&quot;button&quot;&gt;按我!&lt;/button&gt;
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/KrmdPy" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h3>動手試試看(10分鐘)</h3>
+						<img src="img/table-example.png" alt="" />
+						<ul>
+							<li>1. 建立一個如上圖相同欄位的表格。</li>
+							<li>2. 如果你會 css 可以試著做做看。</li>
+						</ul>
+						<a href="http://codepen.io/FireQQTW/pen/ezvGYR" target="_blank" style="display: none;">解答</a>
+					</section>
+				</section>
+
+				<!-- 參考資源 -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>參考資源</h1>
+						<ul>
+							<li><a href="https://hostingfacts.com/html-cheat-sheet/" target="_blank">HTML Cheat Sheet</a></li>
+							<li><a href="http://www.w3schools.com/html/default.asp" target="_blank">w3schools - HTML</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- QA -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>Q & A</h1>
+					</section>
+				</section>
+
+				<!-- 休息時間 -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>休息時間</h1>
+					</section>
+				</section>
 			</div>
 		</div>
 
