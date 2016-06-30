@@ -852,6 +852,341 @@ password:&nbsp;&lt;input&nbsp;type=&quot;password&quot;&nbsp;name=&quot;pwd&quot
 						<h1>休息時間</h1>
 					</section>
 				</section>
+
+				<!-- CSS 選擇器 -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>CSS 選擇器</h1>
+					</section>
+
+					<section>
+						<h1>為什麼需要 CSS?</h1>
+						<p class="fragment">
+							人要衣裝，佛要金裝。
+						</p>
+						<img class="fragment" src="img/html.jpg" alt="" />
+					</section>
+
+					<section>
+						<h1>CSS</h1>
+						<img class="fragment" src="img/css.jpg" alt="" width="400" />
+					</section>
+
+					<section>
+						<h1>MAGIC!!!!</h1>
+						<img class="fragment" src="img/htmlAddCss.jpg" alt="" />
+						<p class="fragment">這下你知道 CSS 的重要了吧</p>
+						<p class="fragment">
+							<a href="http://proxy-image.fanswong.com/proxy.php?url=http%3A%2F%2Fimages.gamme.com.tw%2Fnews%2F2013%2F11%2F2%2FpJ2UnaSakqCVp6Q.jpg&cache=.pagespeed.ce.5a6117b20e98291cabd7bb1f066ee94f.jpg">圖片引用</a>
+						</p>
+					</section>
+				</section>
+
+				<!-- HTML + CSS -->
+				<section data-transition="slide" data-background="#499696">
+				<section>
+					<h1>HTML + CSS</h1>
+					<pre><code data-trim data-noescape>
+&lt;div&gt;
+&nbsp;&nbsp;&lt;h1&gt;金門好天氣&lt;/h1&gt;
+&nbsp;&nbsp;&lt;p&gt;金門有什麼好玩好吃的可以推薦嗎?&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;style&nbsp;media=&quot;screen&quot;&gt;
+&nbsp;div&nbsp;{
+&nbsp;&nbsp;width:&nbsp;500px;
+&nbsp;&nbsp;height:&nbsp;auto;
+&nbsp;&nbsp;padding:&nbsp;20px;
+&nbsp;&nbsp;background-color:&nbsp;#f5f5f5;
+&nbsp;&nbsp;border:&nbsp;1px&nbsp;solid&nbsp;#ccc;
+&nbsp;}
+&nbsp;h1&nbsp;{
+&nbsp;&nbsp;font-size:&nbsp;34px;
+&nbsp;&nbsp;color:&nbsp;#11656d;
+&nbsp;}
+&nbsp;p&nbsp;{
+&nbsp;&nbsp;color:&nbsp;#525252;
+&nbsp;}
+&lt;/style&gt;
+					</code></pre>
+					<p>
+						<a href="http://codepen.io/FireQQTW/pen/dXWGGW" target="_blank">看範例</a>
+					</p>
+				</section>
+
+					<section>
+						<h1>CSS 選擇器格式</h1>
+						<pre><code data-trim data-noescape>
+	選擇器規則&nbsp;{
+	&nbsp;CSS&nbsp;樣式
+	}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>CSS 選擇器種類</h1>
+						<p>以下是常用的選擇器，同時也是權重順序:</p>
+						<ul>
+							<li>ID (#id)</li>
+							<li>Class (.class)</li>
+							<li>Type (即HTML標籤,如div)</li>
+							<li>鄰接選擇器 (如: h2+p，僅作用於鄰接h2的p元素)</li>
+							<li>子選項(Child) (如: li>ul)</li>
+							<li>後代(Descendant) (如:ul a)</li>
+							<li>全部(Universal) (*)</li>
+							<li>屬性 (如: [type="text"])</li>
+							<li>摸擬類別/元素 (如: a:hover)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>ID</h1>
+						<p>#id</p>
+						<pre><code data-trim data-noescape>
+#content-dom&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;id=&quot;content-dom&quot;&gt;
+我是DIV
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>CLASS</h1>
+						<p>.class</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV 1
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV 2
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV 3
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>TYPE</h1>
+						<p>tag</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV 1
+&lt;/div&gt;
+&lt;div&gt;
+我是DIV 2
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>鄰接選擇器</h1>
+						<p>select + select</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;+&nbsp;span&nbsp;{
+&nbsp;&nbsp;color:&nbsp;red;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV&nbsp;1
+&lt;/div&gt;
+&lt;span&gt;我是span&nbsp;1&lt;/span&gt;
+&lt;div&gt;
+我是DIV&nbsp;2
+&lt;/div&gt;
+&lt;span&gt;我是span&nbsp;2&lt;/span&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>子選項(Child)</h1>
+						<p>select > select</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;&gt;&nbsp;div&nbsp;{
+&nbsp;&nbsp;padding-left:&nbsp;20px;&nbsp;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;!--&nbsp;父元素&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV
+&nbsp;&lt;!--&nbsp;自己&nbsp;--&gt;
+&nbsp;&lt;div&gt;
+&nbsp;&nbsp;我是自己
+&nbsp;&nbsp;&lt;!--&nbsp;子元素&nbsp;--&gt;
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;我是子元素
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>後代(Descendant)</h1>
+						<p>select select</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;div&nbsp;{
+&nbsp;&nbsp;padding-left:&nbsp;20px;&nbsp;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;!--&nbsp;父元素&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV
+&nbsp;&lt;!--&nbsp;自己&nbsp;--&gt;
+&nbsp;&lt;div&gt;
+&nbsp;&nbsp;我是自己
+&nbsp;&nbsp;&lt;!--&nbsp;子元素&nbsp;--&gt;
+&nbsp;&nbsp;&lt;div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;我是子元素
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&lt;/div&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>全部(Universal)</h1>
+						<p>*</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;*&nbsp;{
+&nbsp;&nbsp;display:&nbsp;block;
+&nbsp;&nbsp;padding-left:&nbsp;20px;&nbsp;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+我是DIV
+&nbsp;&nbsp;&lt;h1&gt;標題&lt;/h1&gt;
+&nbsp;&nbsp;&lt;p&gt;內容&lt;/p&gt;
+&nbsp;&nbsp;&lt;span&gt;時間&lt;/span&gt;
+&lt;/div&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>屬性 (如: [type="text"])</h2>
+						<p>select[type="text"]</p>
+						<pre><code data-trim data-noescape>
+.content-dom[type=&quot;text&quot;]&nbsp;{
+&nbsp;&nbsp;background-color:&nbsp;#2faa60;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+&nbsp;我是DIV
+&lt;/div&gt;
+
+&lt;input&nbsp;class=&quot;content-dom&quot;&nbsp;type=&quot;text&quot;&nbsp;/&gt;
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>摸擬類別/元素</h2>
+						<p>select:hover</p>
+						<pre><code data-trim data-noescape>
+.content-dom&nbsp;{
+&nbsp;&nbsp;background-color:&nbsp;red;
+}
+
+.content-dom:hover&nbsp;{
+&nbsp;&nbsp;background-color:&nbsp;#2faa60;
+}
+&lt;!--&nbsp;html&nbsp;--&gt;
+&lt;div&nbsp;class=&quot;content-dom&quot;&gt;
+&nbsp;我是DIV
+&lt;/div&gt;
+						</code></pre>
+						<p class="fragment">其他常用: :focus, :active, :visited</p>
+					</section>
+
+					<section>
+						<h2>其他選擇器</h2>
+						<ul>
+							<li>p ~ ul</li>
+							<li>p::after</li>
+							<li>p::before</li>
+							<li>p:nth-child(2)</li>
+							<li>:not(p)</li>
+							<li>p:last-child	</li>
+						</ul>
+						<p>
+							<a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">可參考w3school</a>
+						</p>
+					</section>
+				</section>
+
+				<!-- 做做看 -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>動手做做看</h1>
+					</section>
+
+					<section>
+						<h1>題目1</h1>
+						<img src="img/css-select-q1.png" alt="" width="300" />
+						<pre><code data-trim data-noescape>
+color:&nbsp;red;
+background-color:&nbsp;#ccc;
+						</code></pre>
+						<ul>
+							<li>將樣式設定到"LINK"的連接文字上。</li>
+						</ul>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/OXmNoy?editors=1100" target="_blank">題目連結</a>
+						</p>
+					</section>
+
+					<section>
+						<h1>題目2</h1>
+						<img src="img/css-select-q2.png" alt="" width="300" />
+						<pre><code data-trim data-noescape>
+color:&nbsp;red;
+background-color:&nbsp;#ccc;
+						</code></pre>
+						<ul>
+							<li>將樣式設定到"LINK"的連接文字上。</li>
+						</ul>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/OXmNoy?editors=1100" target="_blank">題目連結</a>
+						</p>
+					</section>
+
+					<section>
+						<h1>題目3</h1>
+						<img src="img/css-select-q3.png" alt="" width="300" />
+						<ul>
+							<li>用 html 標籤，建立如圖中的表格(table)。</li>
+							<li>運用前面的 CSS 選擇器，將提供的樣式套用至表格上。</li>
+						</ul>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/akWkxz" target="_blank">題目連結</a>
+							<a href="http://codepen.io/FireQQTW/pen/YWVWdp" target="_blank" style="display: none;">解答</a>
+						</p>
+					</section>
+
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide" data-background="#499696">
+					<section>
+						<h1>Q&A</h1>
+					</section>
+				</section>
+
+
+			</section>
 			</div>
 		</div>
 
