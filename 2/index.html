@@ -40,8 +40,349 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+				<!-- CSS -->
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>CSS</h1>
+					</section>
+
+					<section>
+						<h1>CSS 樣式</h1>
+						<pre><code data-trim data-noescape>
+選擇器&nbsp;{
+&nbsp;&nbsp;屬性:&nbsp;值;
+}
+
+div&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+}
+						</code></pre>
+						<p>
+							<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference" target="_blank">MDN-CSS 規則表</a>
+						</p>
+					</section>
+				</section>
+
+				<!-- CSS -->
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>常用 CSS 規則</h1>
+					</section>
+
+					<section>
+						<h1>推薦資源: Bocoup</h1>
+						<img src="img/Bocoup.png" alt="" width="500" />
+						<p>
+							<a href="http://zh-tw.learnlayout.com/" target="_blank">保哥翻譯版</a>
+						</p>
+					</section>
+
+					<section>
+						<h1>1. 定位屬性(positioning)</h1>
+					</section>
+
+					<section>
+						<h1>display</h1>
+						<p>元素類型(重要!!)</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;display:&nbsp;block;
+}
+						</code></pre>
+						<ul>
+							<li><a href="http://zh-tw.learnlayout.com/display.html" target="_blank">bocoup教學:display</a></li>
+							<li><a href="http://zh-tw.learnlayout.com/inline-block.html" target="_blank">bocoup教學:inline-display</a></li>
+							<li><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/display" target="_blank">MDN: Display</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>position</h1>
+						<p>元素定位(重要!!)</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;position:&nbsp;relative;
+}
+						</code></pre>
+						<ul>
+							<li><a href="http://zh-tw.learnlayout.com/position.html" target="_blank">bocoup教學:position</a></li>
+							<li><a href="http://www.see-design.com.tw/i/css_position.html" target="_blank">10步掌握元素定位</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>position 方向</h1>
+						<p>top、bottom、left、right</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;position:&nbsp;absolute;
+&nbsp;&nbsp;bottom:&nbsp;0;
+&nbsp;&nbsp;top:&nbsp;0;
+&nbsp;&nbsp;left:&nbsp;0;
+&nbsp;&nbsp;right:&nbsp;0;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>float</h1>
+						<p>浮動(重要!!)</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;float:&nbsp;right;
+}
+.content&nbsp;{
+&nbsp;&nbsp;float:&nbsp;left;
+}
+						</code></pre>
+						<ul>
+							<li><a href="http://zh-tw.learnlayout.com/clearfix.html" target="_blank">bocoup教學: clearfix密技</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h1>2. 尺寸(Dimension)</h1>
+					</section>
+
+					<section>
+						<h1>width, height</h1>
+						<p>寬, 高</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>max, min</h1>
+						<p>最大尺寸, 最小尺寸</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;200px;
+&nbsp;&nbsp;max-width:&nbsp;100px;
+&nbsp;&nbsp;max-height:&nbsp;100px;
+&nbsp;&nbsp;min-width:&nbsp;50px;
+&nbsp;&nbsp;min-height:&nbsp;50px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>3. 背景(Background)</h1>
+					</section>
+
+					<section>
+						<h1>background</h1>
+						<p>背景</p>
+						<pre><code data-trim data-noescape>
+&lt;!--&nbsp;完整寫法&nbsp;--&gt;
+div&nbsp;{
+&nbsp;&nbsp;background:&nbsp;#ffffff&nbsp;url(&quot;img_tree.png&quot;)&nbsp;no-repeat&nbsp;right&nbsp;top;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<p>分開寫</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;background-color:&nbsp;#ffffff;
+&nbsp;&nbsp;background-image:&nbsp;url(&quot;img_tree.png&quot;);
+&nbsp;&nbsp;background-repeat:&nbsp;no-repeat;
+&nbsp;&nbsp;background-position:&nbsp;right&nbsp;top;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>4. 文字(Font)</h1>
+					</section>
+
+					<section>
+						<h1>Font-family</h1>
+						<p>文字字型</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;font-family:&nbsp;&quot;Times&nbsp;New&nbsp;Roman&quot;,&nbsp;Times,&nbsp;serif;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>Font-weight</h1>
+						<p>字體粗細</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;font-wight:&nbsp;bold;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>color</h1>
+						<p>顏色</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;color:&nbsp;#ccc;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>line-height</h1>
+						<p>行高</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;line-height:&nbsp;1em;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>text-align</h1>
+						<p>文字對齊</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;text-align:&nbsp;center;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>text-decoration</h1>
+						<p>文字裝飾</p>
+						<pre><code data-trim data-noescape>
+.a-link&nbsp;{
+&nbsp;&nbsp;text-decoration:&nbsp;underline;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>text-shadow</h1>
+						<p>文字陰影(CSS3)(<a href="http://fmbip.com/litmus/" target="_blank">支援度</a>)</p>
+						<pre><code data-trim data-noescape>
+.a-link&nbsp;{
+&nbsp;&nbsp;text-shadow:&nbsp;2px&nbsp;2px&nbsp;4px&nbsp;#ff0000;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>5. 邊框(Border)</h1>
+					</section>
+
+					<section>
+						<h1>BORDER</h1>
+						<p>邊框</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;border:&nbsp;1px&nbsp;solid&nbsp;#ccc;
+}
+.content&nbsp;{
+&nbsp;&nbsp;border-width:&nbsp;1px;
+&nbsp;&nbsp;border-style:&nbsp;solid;
+&nbsp;&nbsp;border-color:&nbsp;#ccc;
+}
+.content-2 {
+&nbsp;&nbsp;border-left:&nbsp;1px&nbsp;solid&nbsp;#ccc;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h1>BORDER-RADIUS</h1>
+						<p>圓角(CSS3)(<a href="http://fmbip.com/litmus/" target="_blank">支援度</a>)</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;border-radius:&nbsp;25px;
+&nbsp;&nbsp;border-radius:&nbsp;25px&nbsp;25px&nbsp;25px&nbsp;25px;
+}
+						</code></pre>
+						<p>方向口訣: 左上、右上、右下、左下</p>
+					</section>
+
+					<section>
+						<h1>6. 內距(padding)</h1>
+					</section>
+
+					<section>
+						<h1>padding</h1>
+						<p>內距</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;padding:&nbsp;2px;
+}
+.content&nbsp;{
+&nbsp;&nbsp;padding-left:&nbsp;2px;
+&nbsp;&nbsp;padding-right:&nbsp;2px;
+&nbsp;&nbsp;padding-top:&nbsp;2px;
+&nbsp;&nbsp;padding-bottom:&nbsp;2px;
+&nbsp;&nbsp;padding:&nbsp;2px&nbsp;2px&nbsp;2px&nbsp;2px;
+}
+						</code></pre>
+						<p>方向口訣: 上、右、下、左</p>
+					</section>
+
+					<section>
+						<h1>6. 外距(margin)</h1>
+					</section>
+
+					<section>
+						<h1>margin</h1>
+						<p>外距</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;margin:&nbsp;2px;
+}
+.content&nbsp;{
+&nbsp;&nbsp;margin-left:&nbsp;2px;
+&nbsp;&nbsp;margin-right:&nbsp;2px;
+&nbsp;&nbsp;margin-top:&nbsp;2px;
+&nbsp;&nbsp;margin-bottom:&nbsp;2px;
+&nbsp;&nbsp;margin:&nbsp;2px&nbsp;2px&nbsp;2px&nbsp;2px;
+}
+						</code></pre>
+						<p>方向口訣: 上、右、下、左</p>
+					</section>
+				</section>
+
+				<!-- BOX-MODEL -->
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>BOX-MODEL</h1>
+						<img src="img/box-model.svg" alt="box-model" style="background-color: #fff;">
+					</section>
+
+					<section>
+						<h1>BOX-sizing</h1>
+						<p>模型寬高基準</p>
+						<pre><code data-trim data-noescape>
+div&nbsp;{
+&nbsp;&nbsp;box-sizing:&nbsp;content-box;
+&nbsp;&nbsp;box-sizing:&nbsp;border-box;
+}
+						</code></pre>
+						<ul>
+							<li><a href="https://developer.mozilla.org/zh-TW/docs/Web/CSS/%E5%BD%88%E9%A0%AD" target="_blank">MDN: box-sizing</a></li>
+							<li><a href="http://zh-tw.learnlayout.com/box-sizing.html" target="_blank">bocoup教學: box-sizing</a></li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>Q&A</h1>
+					</section>
+				</section>
+
 				<!-- html5 -->
-				<section data-transition="slide" data-background="#499696">
+				<section data-transition="slide" data-background="#ffd505">
 					<section>
 						<h1>HTML 5</h1>
 					</section>
@@ -62,6 +403,9 @@
 						<p>
 							<a href="http://fmbip.com/litmus/" target="_blank">fmbip.com</a>
 						</p>
+						<p>
+							<a href="http://www.noupe.com/design/html51-completion-98208.html" target="_blank">2016-6-30: HTML5.1</a>
+						</p>
 					</section>
 
 					<section>
@@ -72,7 +416,7 @@
 				</section>
 
 				<!-- html5 語意化 -->
-				<section data-transition="slide" data-background="#499696">
+				<section data-transition="slide" data-background="#ffd505">
 					<section>
 						<h1>HTML 5 語意化</h1>
 					</section>
@@ -132,10 +476,31 @@
 							<li>File API</li>
 						</ul>
 					</section>
+
+					<section>
+						<h1>補充, 參考</h1>
+						<p>
+							<a href="http://devdocs.io/html-html5/" target="_blank">Devdocs - HTML 5</a>
+						</p>
+					</section>
 				</section>
 
 				<!-- Q&A -->
-				<section data-transition="slide" data-background="#499696">
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>Q&A</h1>
+					</section>
+				</section>
+
+				<!-- SASS -->
+				<section data-transition="slide" data-background="#ffd505">
+					<section>
+						<h1>SASS</h1>
+					</section>
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide" data-background="#ffd505">
 					<section>
 						<h1>Q&A</h1>
 					</section>
