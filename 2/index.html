@@ -15,10 +15,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style media="screen">
+		.reveal .slides section .fragment.current-fragment.highlight-current-yellow {
+			color: #e1ff1b;
+		}
+		</style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -41,13 +46,13 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<!-- CSS -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out">
 					<section>
-						<h1>CSS</h1>
+						<h2>CSS</h2>
 					</section>
 
 					<section>
-						<h1>CSS 樣式</h1>
+						<h2>CSS 樣式</h2>
 						<pre><code data-trim data-noescape>
 選擇器&nbsp;{
 &nbsp;&nbsp;屬性:&nbsp;值;
@@ -65,13 +70,13 @@ div&nbsp;{
 				</section>
 
 				<!-- CSS -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>常用 CSS 規則</h1>
+						<h2>常用 CSS 規則</h2>
 					</section>
 
 					<section>
-						<h1>推薦資源: Bocoup</h1>
+						<h2>推薦資源: Bocoup</h2>
 						<img src="img/Bocoup.png" alt="" width="500" />
 						<p>
 							<a href="http://zh-tw.learnlayout.com/" target="_blank">保哥翻譯版</a>
@@ -79,11 +84,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>1. 定位屬性(positioning)</h1>
+						<h2>1. 定位屬性(positioning)</h2>
 					</section>
 
 					<section>
-						<h1>display</h1>
+						<h2>display</h2>
 						<p>元素類型(重要!!)</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -98,7 +103,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>position</h1>
+						<h2>position</h2>
 						<p>元素定位(重要!!)</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -112,7 +117,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>position 方向</h1>
+						<h2>position 方向</h2>
 						<p>top、bottom、left、right</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -126,7 +131,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>float</h1>
+						<h2>float</h2>
 						<p>浮動(重要!!)</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -142,11 +147,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>2. 尺寸(Dimension)</h1>
+						<h2>2. 尺寸(Dimension)</h2>
 					</section>
 
 					<section>
-						<h1>width, height</h1>
+						<h2>width, height</h2>
 						<p>寬, 高</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -157,7 +162,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>max, min</h1>
+						<h2>max, min</h2>
 						<p>最大尺寸, 最小尺寸</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -172,11 +177,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>3. 背景(Background)</h1>
+						<h2>3. 背景(Background)</h2>
 					</section>
 
 					<section>
-						<h1>background</h1>
+						<h2>background</h2>
 						<p>背景</p>
 						<pre><code data-trim data-noescape>
 &lt;!--&nbsp;完整寫法&nbsp;--&gt;
@@ -199,11 +204,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>4. 文字(Font)</h1>
+						<h2>4. 文字(Font)</h2>
 					</section>
 
 					<section>
-						<h1>Font-family</h1>
+						<h2>Font-family</h2>
 						<p>文字字型</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -213,7 +218,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>Font-weight</h1>
+						<h2>Font-weight</h2>
 						<p>字體粗細</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -223,7 +228,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>color</h1>
+						<h2>color</h2>
 						<p>顏色</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -233,7 +238,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>line-height</h1>
+						<h2>line-height</h2>
 						<p>行高</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -243,7 +248,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>text-align</h1>
+						<h2>text-align</h2>
 						<p>文字對齊</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -253,7 +258,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>text-decoration</h1>
+						<h2>text-decoration</h2>
 						<p>文字裝飾</p>
 						<pre><code data-trim data-noescape>
 .a-link&nbsp;{
@@ -263,7 +268,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>text-shadow</h1>
+						<h2>text-shadow</h2>
 						<p>文字陰影(CSS3)(<a href="http://fmbip.com/litmus/" target="_blank">支援度</a>)</p>
 						<pre><code data-trim data-noescape>
 .a-link&nbsp;{
@@ -273,11 +278,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>5. 邊框(Border)</h1>
+						<h2>5. 邊框(Border)</h2>
 					</section>
 
 					<section>
-						<h1>BORDER</h1>
+						<h2>BORDER</h2>
 						<p>邊框</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -295,7 +300,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>BORDER-RADIUS</h1>
+						<h2>BORDER-RADIUS</h2>
 						<p>圓角(CSS3)(<a href="http://fmbip.com/litmus/" target="_blank">支援度</a>)</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -307,11 +312,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>6. 內距(padding)</h1>
+						<h2>6. 內距(padding)</h2>
 					</section>
 
 					<section>
-						<h1>padding</h1>
+						<h2>padding</h2>
 						<p>內距</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -329,11 +334,11 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>6. 外距(margin)</h1>
+						<h2>6. 外距(margin)</h2>
 					</section>
 
 					<section>
-						<h1>margin</h1>
+						<h2>margin</h2>
 						<p>外距</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -352,14 +357,14 @@ div&nbsp;{
 				</section>
 
 				<!-- BOX-MODEL -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>BOX-MODEL</h1>
+						<h2>BOX-MODEL</h2>
 						<img src="img/box-model.svg" alt="box-model" style="background-color: #fff;">
 					</section>
 
 					<section>
-						<h1>BOX-sizing</h1>
+						<h2>BOX-sizing</h2>
 						<p>模型寬高基準</p>
 						<pre><code data-trim data-noescape>
 div&nbsp;{
@@ -375,20 +380,20 @@ div&nbsp;{
 				</section>
 
 				<!-- Q&A -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>Q&A</h1>
+						<h2>Q&A</h2>
 					</section>
 				</section>
 
 				<!-- html5 -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>HTML 5</h1>
+						<h2>HTML 5</h2>
 					</section>
 
 					<section>
-						<h1>什麼是 HTML 5？</h1>
+						<h2>什麼是 HTML 5？</h2>
 						<p class="fragment">1. 由 W3C 完成標準制定。</p>
 						<p class="fragment">2. 取代 HTML 4.01 和 XHTML 1.0</p>
 						<p class="fragment">3. 廣義包刮 CSS 及 Javascript</p>
@@ -397,7 +402,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>支援程度</h1>
+						<h2>支援程度</h2>
 						<img src="img/html5support.png" alt="" width="450" />
 						<p>HTML5 仍然在持續的不斷修正中。</p>
 						<p>
@@ -409,30 +414,30 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>HTML5 轉捩點</h1>
+						<h2>HTML5 轉捩點</h2>
 						<p class="fragment">1 .Youtube 提供 HTML5 播放器</p>
 						<p class="fragment">2. 賈伯斯宣布放棄 Flash 相關的支援</p>
 					</section>
 				</section>
 
 				<!-- html5 語意化 -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>HTML 5 語意化</h1>
+						<h2>HTML 5 語意化</h2>
 					</section>
 
 					<section>
-						<h1>HTML</h1>
+						<h2>HTML</h2>
 						<img src="img/html_structure.jpg" alt="" width="450" />
 					</section>
 
 					<section>
-						<h1>HTML5</h1>
+						<h2>HTML5</h2>
 						<img src="img/html5_structure.png" alt="" width="450" />
 					</section>
 
 					<section>
-						<h1>新增標籤(內容)</h1>
+						<h2>新增標籤(內容)</h2>
 						<ul>
 							<li>&lt;header&gt;: 區塊的標題或者摘要。</li>
 							<li>&lt;footer&gt;: 置底版權區域。</li>
@@ -450,7 +455,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>影音功能</h1>
+						<h2>影音功能</h2>
 						<ul>
 							<li>&lt;video&gt;: 影片(<a href="http://codepen.io/codexandtips/pen/mKeIb" target="_blank">範例</a>)</li>
 							<li>&lt;audio&gt;: 聲音(<a href="http://codepen.io/GRSimon/pen/vbFle" target="_blank">範例</a>)</li>
@@ -458,7 +463,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>動畫、圖像</h1>
+						<h2>動畫、圖像</h2>
 						<ul>
 							<li>&lt;canvas&gt;: 動畫、圖型(<a href="http://codepen.io/jscottsmith/pen/VjPaLO" target="_blank">範例</a>)</li>
 							<li>&lt;svg&gt;: 圖像(<a href="http://codepen.io/gxash/pen/YqmxWg" target="_blank">範例</a>)</li>
@@ -470,7 +475,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>離線儲存</h1>
+						<h2>離線儲存</h2>
 						<ul>
 							<li>Web Storage</li>
 							<li>File API</li>
@@ -478,7 +483,7 @@ div&nbsp;{
 					</section>
 
 					<section>
-						<h1>補充, 參考</h1>
+						<h2>補充, 參考</h2>
 						<p>
 							<a href="http://devdocs.io/html-html5/" target="_blank">Devdocs - HTML 5</a>
 						</p>
@@ -486,23 +491,478 @@ div&nbsp;{
 				</section>
 
 				<!-- Q&A -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>Q&A</h1>
+						<h2>Q&A</h2>
 					</section>
 				</section>
 
 				<!-- SASS -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>SASS</h1>
+						<h2>SASS</h2>
+						<img src="img/sass_logo.png" alt="" style="background-color: #fff; border: 40px solid #fff;" />
+					</section>
+
+					<section>
+						<h2>什麼是 SASS?</h2>
+						<p>
+							<a href="http://sass-lang.com/" target="_blank">官網</a>
+						</p>
+						<ul>
+							<li>1. 撰寫CSS的一種預處理(pre-processing)工具</li>
+							<li>2. 可以提升寫 CSS 效率的程式語言</li>
+						</ul>
+						<p>
+							<a href="http://codepen.io/hexagoncircle/pen/eZawWv?editors=0100" target="_blank">看範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>拼命複製貼上...</h2>
+						<ul>
+							<li>.box li a span { ... }</li>
+							<li>.box li a { ... }</li>
+							<li>.box li { ... }</li>
+							<li>.box li a p { ... }</li>
+							<li>.box li p { ... }</li>
+							<li>.box li .content { ... }</li>
+							<li>.box li h1 { ... }</li>
+						</ul>
+						<p><h2>瘋了....</h2></p>
+					</section>
+
+
+					<section data-background="img/sotired.png">
+						<h2>我們可以更有效率！</h2>
+					</section>
+
+					<section>
+						<h2>打完收工~</h2>
+						<h3>還可以找隔壁阿珠喝咖啡</h3>
+						<!-- code -->
+						<pre><code data-trim>
+.box {
+ li {
+  p { ... }
+  h1 { .... }
+  .content { ... }
+  a {
+    span { ... }
+  }
+ }
+}
+						</code></pre>
+						<!-- code -->
+					</section>
+
+					<section>
+						<h2>這麼多? 差在哪?</h2>
+						<h3>SASS、SCSS、LESS</h3>
+						<h4>?????????</h4>
+					</section>
+
+					<section>
+						<h2>SASS</h2>
+						<p>更簡單的 SCSS</p>
+						<pre><code data-trim data-noescape>
+$primaryColor:&nbsp;#eeccff
+
+body&nbsp;
+&nbsp;&nbsp;$primaryColor:&nbsp;#ccc
+&nbsp;&nbsp;background:&nbsp;$primaryColor
+
+
+p&nbsp;
+&nbsp;&nbsp;color:&nbsp;$primaryColor
+&nbsp;&nbsp;a&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;18px
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/qNjBAG?editors=0100" target="_blank">範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>SCSS</h2>
+						<p>最適合初學者</p>
+						<pre><code data-trim data-noescape>
+$primaryColor:&nbsp;#eeccff;
+
+body&nbsp;{
+&nbsp;&nbsp;$primaryColor:&nbsp;#ccc;
+&nbsp;&nbsp;background:&nbsp;$primaryColor;
+}
+
+p&nbsp;{
+&nbsp;&nbsp;color:&nbsp;$primaryColor;
+&nbsp;&nbsp;a&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;18px;
+&nbsp;&nbsp;}
+}
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/OXgJRX?editors=0100" target="_blank">範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>LESS</h2>
+						<p>也不賴啦~</p>
+						<pre><code data-trim data-noescape>
+@font-color:&nbsp;#ccc;
+
+div{
+&nbsp;&nbsp;span&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;font-size:20px;
+&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;@font-color;
+&nbsp;&nbsp;&nbsp;&nbsp;b&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:red;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+&nbsp;&nbsp;}
+&nbsp;&nbsp;i&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;font-size:12px;
+&nbsp;&nbsp;}
+}
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/akwbEx?editors=0100" target="_blank">範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>我推薦: SCSS</h2>
+						<ul>
+							<li>簡單</li>
+							<li>易讀</li>
+							<li>範例多</li>
+							<li>CSS 轉移快速</li>
+						</ul>
+					</section>
+				</section>
+
+				<!-- SCSS 基本使用 -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>SCSS 基本使用</h2>
+					</section>
+
+					<section>
+						<h2>1. 變數</h2>
+					</section>
+
+					<section>
+						<h3>基本運用</h3>
+						<p>Before:</p>
+						<!-- code -->
+						<pre><code data-trim>
+$text-size:18px;
+
+body{
+  font-size:$text-size;
+}
+#content{
+  width:$text-size;
+}
+						</code></pre>
+						<!-- code -->
+						<p class="fragment">After:</p>
+						<pre class="fragment"><code data-trim>
+body {
+  font-size: 18px;
+}
+
+#content {
+  width: 18px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>變數計算</h3>
+						<p>Before:</p>
+						<pre><code data-trim data-noescape>
+$width:200px;
+
+.content&nbsp;{
+&nbsp;&nbsp;width:&nbsp;$width;
+&nbsp;&nbsp;height:&nbsp;$width*2;
+&nbsp;&nbsp;font-size:&nbsp;$width/10;
+}
+						</code></pre>
+						<p class="fragment">After:</p>
+						<pre class="fragment"><code data-trim data-noescape>
+.content&nbsp;{
+&nbsp;&nbsp;width:&nbsp;200px;
+&nbsp;&nbsp;height:&nbsp;400px;
+&nbsp;&nbsp;font-size:&nbsp;20px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>2. 函式</h2>
+					</section>
+
+					<section>
+						<h3>@mixin</h3>
+						<p>Before:</p>
+						<pre><code data-trim data-noescape>
+@mixin&nbsp;border-radius($angle){
+&nbsp;&nbsp;border-radius:$angle;
+&nbsp;&nbsp;-webkit-border-radius:$angle;
+&nbsp;&nbsp;-moz-border-radius:$angle;
+}
+
+#box{
+&nbsp;&nbsp;@include&nbsp;border-radius(10px);
+}
+						</code></pre>
+						<p class="fragment">After:</p>
+						<pre class="fragment"><code data-trim data-noescape>
+#box&nbsp;{
+&nbsp;&nbsp;border-radius:&nbsp;10px;
+&nbsp;&nbsp;-webkit-border-radius:&nbsp;10px;
+&nbsp;&nbsp;-moz-border-radius:&nbsp;10px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>3. 繼承</h2>
+					</section>
+
+					<section>
+						<h3>@extend</h3>
+						<p>Before:</p>
+						<pre><code data-trim data-noescape>
+.ext{
+&nbsp;&nbsp;font-size:10px;
+&nbsp;&nbsp;width:400px;
+}
+body{
+&nbsp;&nbsp;@extend&nbsp;.ext;
+&nbsp;&nbsp;height:600px;
+}
+						</code></pre>
+						<p class="fragment">After:</p>
+						<pre class="fragment"><code data-trim data-noescape>
+.ext,&nbsp;body&nbsp;{
+&nbsp;&nbsp;font-size:&nbsp;10px;
+&nbsp;&nbsp;width:&nbsp;400px;
+}
+
+body&nbsp;{
+&nbsp;&nbsp;height:&nbsp;600px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>4. 巢狀</h2>
+					</section>
+
+					<section>
+						<h3>巢狀</h3>
+						<pre><code data-trim data-noescape>
+table&nbsp;{
+&nbsp;&nbsp;margin:&nbsp;2em&nbsp;0;
+&nbsp;&nbsp;tr{
+&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;5px;
+&nbsp;&nbsp;}
+&nbsp;&nbsp;td&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;right;
+&nbsp;&nbsp;}
+}
+
+.content&nbsp;{
+&nbsp;&nbsp;width:&nbsp;20px;
+&nbsp;&nbsp;height:&nbsp;10px;
+&nbsp;&nbsp;.content-title&nbsp;{
+&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;18px;
+&nbsp;&nbsp;}
+}
+
+//&nbsp;編譯後
+table&nbsp;{
+&nbsp;&nbsp;margin:&nbsp;2em&nbsp;0;
+}
+table&nbsp;tr&nbsp;{
+&nbsp;&nbsp;margin:&nbsp;5px;
+}
+table&nbsp;td&nbsp;{
+&nbsp;&nbsp;text-align:&nbsp;right;
+}
+
+.content&nbsp;{
+&nbsp;&nbsp;width:&nbsp;20px;
+&nbsp;&nbsp;height:&nbsp;10px;
+}
+.content&nbsp;.content-title&nbsp;{
+&nbsp;&nbsp;font-size:&nbsp;18px;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>5. 方法</h2>
+					</section>
+
+					<section>
+						<h2>@function</h2>
+						<h3>SASS 自帶(<a href="http://sass-lang.com/documentation/Sass/Script/Functions.html" target="_blank">參考</a>)</h3>
+						<pre><code data-trim>
+$yDark: darken(#FEDD31,50%);
+$color_1: rgba(#102030, 0.5);
+$color_2: lighten(#800, 20%);
+
+a {
+  color: $yDark;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>6. %</h2>
+						<h3 class="fragment">對，別懷疑，我沒打錯，就是"趴"</h3>
+					</section>
+
+					<section>
+						<h2>%</h2>
+						<h3>別站著茅坑不拉屎(<a href="http://codepen.io/FireQQTW/pen/mEwZWZ?editors=0100" target="_blank">範例</a>)</h3>
+						<pre><code data-trim>
+// 這是佔著茅坑不拉屎
+.all-list-default-style-2 {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+
+.list-c {
+  @extend .all-list-default-style-2;
+  color: red;
+}
+
+.list-d {
+  @extend .all-list-default-style-2;
+  color: blue;
+}
+
+
+// %
+%all-list-default-style {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+}
+
+.list-a {
+  @extend %all-list-default-style;
+  color: red;
+}
+
+.list-b {
+  @extend %all-list-default-style;
+  color: blue;
+}
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>6. Partials</h2>
+					</section>
+
+					<section>
+						<h2>6. Partials</h2>
+					</section>
+
+
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>CSS 模組化</h2>
+					</section>
+
+					<section>
+						<h2>優良的 CSS</h2>
+						<ol>
+							<li class="fragment highlight-current-yellow">可預測(Predictable)</li>
+							<li class="fragment highlight-current-yellow">可複用(Reusable)</li>
+							<li class="fragment highlight-current-yellow">可維護(Maintainable)</li>
+							<li class="fragment highlight-current-yellow">可擴展(Scalale)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>OOCSS</h2>
+						<p>不是新技術，只是設計模式，或者可以說是一種規範，主要可分為：</p>
+						<ul>
+							<li>1. 減少 HTML 的依賴</li>
+							<li>2. 增加 class 重複性的使用</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>減少 HTML 的依賴</h3>
+						<pre><code data-trim>
+<div class="main-menu">
+  <ul>
+    <li><a>...</a></li>
+    <li><a>...</a></li>
+    <li><a>...</a></li>
+  </ul>
+</div>
+						</code></pre>
+						<p class="fragment">
+							css 選擇器:  <span class="fragment highlight-red">.main-menu ul li a { .... }</span>
+						</p>
+					</section>
+
+					<section>
+						<h3>好的做法</h3>
+						<pre><code data-trim>
+<div class="main-menu">
+  <ul>
+    <li><a class="main-menu-link">...</a></li>
+    <li><a class="main-menu-link">...</a></li>
+    <li><a class="main-menu-link">...</a></li>
+  </ul>
+</div>
+						</code></pre>
+						<p class="fragment">
+							css 選擇器:  <span class="fragment highlight-red">.main-menu a { .... }</span>
+						</p>
+						<p class="fragment">
+							css 選擇器:  <span class="fragment highlight-red">.main-menu-link { .... }</span>
+						</p>
+					</section>
+
+					<section>
+						<h3>增加 class 重複性的使用</h3>
+						<pre><code data-trim>
+.default-button {
+  display: inline-block;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 4px;
+  &.button-default { background: hsla(30, 10%, 40%, 1); }
+  &.button-primary { background: hsla(360, 6%, 70%, 1); }
+}
+						</code></pre>
+
+						<pre><code data-trim>
+<a class="default-button button-default">按鈕1</a>
+<a class="default-button button-primary">按鈕2</a>
+						</code></pre>
 					</section>
 				</section>
 
 				<!-- Q&A -->
-				<section data-transition="slide" data-background="#ffd505">
+				<section data-transition="slide-in fade-out" >
 					<section>
-						<h1>Q&A</h1>
+						<h2>Q&A</h2>
 					</section>
 				</section>
 			</div>
