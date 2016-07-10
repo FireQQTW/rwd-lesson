@@ -20,6 +20,11 @@
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 		<style media="screen">
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+		html, .reveal * {
+			font-family: "Noto Sans TC", sans-serif !important;
+		}
 		.reveal .slides section .fragment.current-fragment.highlight-current-yellow {
 			color: #e1ff1b;
 		}
@@ -370,12 +375,60 @@
 					</section>
 
 					<section>
+						<h2>範例2</h2>
+						<pre><code>
+.div-default {
+  box-sizing: border-box;
+  width: 20%;
+  height: auto;
+  float: left;
+  border: 1px solid #e6e6e6;
+  padding: 14px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+/* 寬度 < 768px */
+@media screen and (max-width:768px) {
+  .div-default {
+    width: 50%;
+    background-color: green;
+  }
+}
+
+/* 寬度 < 320px */
+@media screen and (max-width:320px) {
+  .div-default {
+    width: 100%;
+    background-color: red;
+  }
+}
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/kXGENk" target="_blank">範例</a>
+						</p>
+					</section>
+
+					<section>
 						<h2>參考資源</h2>
 						<ul>
 							<li><a href="http://muki.tw/tech/css-media-queries-introduce-basic/" target="_blank">MUKI space*: CSS Media Queries 介紹與基礎應用</a></li>
 							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media" target="_blank">MDN: @media</a></li>
 							<li><a href="https://hsinyu00.wordpress.com/2011/04/05/mobile-web-media-queries/" target="_blank">Mobile Web 前端技術筆記(二): Media Queries 與 CSS</a></li>
 						</ul>
+					</section>
+
+					<section>
+						<h2>動手做做看</h2>
+						<img src="img/draw-layout-example.jpg" alt="" width="350" />
+						<p>用他來做 RWD。</p>
+					</section>
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>Q&A</h2>
 					</section>
 				</section>
 			</div>
