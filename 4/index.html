@@ -29,6 +29,9 @@
 		.reveal .slides section .fragment.visible.highlight-yellow {
 			color: #e1ff1b;
 		}
+		.reveal .slides section .color.highlight-yellow {
+			color: #e1ff1b;
+		}
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -51,6 +54,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
+
 				<!-- 排切版實作 -->
 				<section data-transition="slide-in fade-out" >
 					<section>
@@ -67,10 +71,311 @@
 
 				</section>
 
+				<!-- RWD -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>RWD </h2>
+					</section>
+
+					<section data-background="img/device-agnostic.jpg">
+						<h2>自適應設計</h2>
+						<h3>Responsive Web Design</h3>
+					</section>
+
+					<section>
+						<h2>什麼是RWD?</h2>
+						<ul>
+							<li class="fragment">伸縮自如的網站。</li>
+							<li class="fragment">使用 Media Query 技術。</li>
+							<li class="fragment"><a href="http://wellington.govt.nz/" target="_blank">實例: wellington.govt.nz</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<img src="img/responsivedesign.png" alt="" />
+					</section>
+
+					<section>
+						<h2>優點</h2>
+						<ul>
+							<li class="fragment">可同時適用不同裝置。</li>
+							<li class="fragment">不需下載APP就能使用。</li>
+							<li class="fragment">開發及維護成本與時間比APP低。</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>缺點</h2>
+						<ul>
+							<li class="fragment">太過複雜的網站不適合。</li>
+							<li class="fragment">網頁撰寫時間較久。</li>
+							<li class="fragment">不支援過舊的瀏覽器。</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>如何選擇要不要RWD?</h2>
+						<ul>
+							<li class="fragment">$$$$$$$$$$$$$</li>
+							<li class="fragment">功能及介面複雜度</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>補充資源</h2>
+						<ul>
+							<li><a href="http://mediaqueri.es/" target="_blank">mediaqueri.es</a></li>
+						</ul>
+					</section>
+
+				</section>
+
 				<!-- Q&A -->
 				<section data-transition="slide-in fade-out" >
 					<section>
 						<h2>Q&A</h2>
+					</section>
+				</section>
+
+				<!-- 如何開始製作 RWD? -->
+				<section data-transition="slide-in fade-out">
+					<section>
+						<h2>製作前的準備</h2>
+					</section>
+
+					<section>
+						<h2>介面尺寸</h2>
+						<img src="img/RWD.jpg" alt="" width="900" />
+						<p>
+							<a href="https://www.google.com.tw/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=0ahUKEwi2l8ax3OXNAhUBj5QKHVVGDoQQjhwIBQ&url=http%3A%2F%2Fwww.demacmedia.com%2Fdesign-user-experience%2Ffuture-responsive-web-design%2F&psig=AFQjCNH4Jgf5-HqD-r6vDFJuh9bUB7_a_g&ust=1468131013585920" target="_blank">引用</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>最常設定的尺寸</h2>
+						<img src="img/breakpoints.png" alt="" width="900" />
+						<p>
+							<a href="http://www.sonataweb.co.uk/essay/breakpoints.png" target="_blank">引用</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>每個尺寸都要設定？</h2>
+						<ul>
+							<li>設定主要的優先(320px、480px、768px、1024px以上)</li>
+							<li>特殊的再單獨設定。</li>
+						</ul>
+					</section>
+
+					<section data-background="img/device-agnostic.jpg">
+						<h2>測試其他裝置</h2>
+					</section>
+
+					<section>
+						<h2>交給 Chrome</h2>
+						<img src="img/chrome-rwd-tool.png" alt="" width="600" />
+					</section>
+
+					<section>
+						<h2>測試多介面</h2>
+						<img src="img/chrome-rwd-tool-2.png" alt="" width="600" />
+					</section>
+
+					<section>
+						<h2>到其他網站看看</h2>
+						<ul>
+							<li><a href="http://mediaqueri.es/" target="_blank">mediaqueri.es</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>HTML: viewport</h2>
+						<p>加到 HTML 中的 head 標籤中，告訴瀏覽器依據的標準。</p>
+						<pre><code>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+							</code></pre>
+					</section>
+
+					<section>
+						<h2>viewport</h2>
+						<table>
+						<thead>
+							<tr>
+								<th>屬性</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>width</td>
+								<td>設定畫面寬度</td>
+							</tr>
+							<tr>
+								<td>height</td>
+								<td>設定畫面高度</td>
+							</tr>
+							<tr>
+								<td>initial-scale</td>
+								<td>設定畫面的初始縮放比例</td>
+							</tr>
+							<tr>
+								<td>minimum-scale</td>
+								<td>設定畫面的最小縮放比例</td>
+							</tr>
+							<tr>
+								<td>maximum-scale</td>
+								<td>設定畫面的最大縮放比例</td>
+							</tr>
+							<tr>
+								<td>user-scalable</td>
+								<td>設定是否允許使用者改變縮放比例</td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+				</section>
+
+				<!-- MEDIA QUERY -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>Media Query</h2>
+					</section>
+
+					<section>
+						<h2>Media Query</h2>
+						<p>用來區分對應不同介面的 CSS 的語法。</p>
+						<ul>
+							<li>CSS 3 語法</li>
+							<li>@media</li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>@media [media <span class="fragment highlight-yellow">type</span>] and [(media <span class="fragment highlight-yellow">feature</span>)]</h4>
+						<pre class="fragment"><code>
+@media screen and (min-width:500px) {.....}
+						</code></pre>
+						<pre class="fragment"><code>
+<link rel="stylesheet" media="screen and (min-width: 400px) and (max-width: 700px)" href="mobile.css" />
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>TYPE</h2>
+						<table>
+						<thead>
+							<tr>
+								<th>屬性</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="color highlight-yellow">all</span></td>
+								<td><span class="color highlight-yellow">所有裝置</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">screen</span></td>
+								<td><span class="color highlight-yellow">一般電腦螢幕 (含iphone, ipad)</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">speech</span></td>
+								<td><span class="color highlight-yellow">朗讀式裝置</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">print</span></td>
+								<td><span class="color highlight-yellow">印表機</span></td>
+							</tr>
+							<tr>
+								<td>braille</td>
+								<td>盲人點字器</td>
+							</tr>
+							<tr>
+								<td>embossed</td>
+								<td>盲人點字印表機</td>
+							</tr>
+							<tr>
+								<td>handheld</td>
+								<td>手機/ PDA裝置</td>
+							</tr>
+							<tr>
+								<td>projection</td>
+								<td>全螢幕投影輸出</td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+
+					<section>
+						<h2>feature</h2>
+						<table>
+						<thead>
+							<tr>
+								<th>屬性</th>
+								<th>描述</th>
+							</tr>
+						</thead>
+						<tbody style="font-size: 20px;">
+							<tr>
+								<td><span class="color highlight-yellow">width | min-width | max-width</span></td>
+								<td><span class="color highlight-yellow">寬度 | 最小寬度 | 最大寬度</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">height | min-height | max-height</span></td>
+								<td><span class="color highlight-yellow">高度 | 最小高度 | 最大高度</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">device-width | min-device-width | max-device-width</span></td>
+								<td><span class="color highlight-yellow">裝置寬度 | 裝置最小寬度 | 裝置最大寬度</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">device-height | min-device-height | max-device-height</span></td>
+								<td><span class="color highlight-yellow">裝置高度 | 裝置最小高度 | 裝置最大高度</span></td>
+							</tr>
+							<tr>
+								<td><span class="color highlight-yellow">orientation (value: portrait | landscape)</span></td>
+								<td><span class="color highlight-yellow">裝置方向 值:直立 | 橫向</span></td>
+							</tr>
+						</tbody>
+					</table>
+					</section>
+
+					<section>
+						<h2>範例</h2>
+						<pre><code>
+.content {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  padding: 12px;
+}
+
+/* 寬度 < 768px */
+@media screen and (max-width:768px) {
+  .content {
+    background-color: green;
+  }
+}
+
+/* 寬度 < 320px */
+@media screen and (max-width:320px) {
+  .content {
+    background-color: red;
+  }
+}
+						</code></pre>
+						<p>
+							<a href="http://codepen.io/FireQQTW/pen/VjrQvp" target="_blank">範例</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>參考資源</h2>
+						<ul>
+							<li><a href="http://muki.tw/tech/css-media-queries-introduce-basic/" target="_blank">MUKI space*: CSS Media Queries 介紹與基礎應用</a></li>
+							<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media" target="_blank">MDN: @media</a></li>
+							<li><a href="https://hsinyu00.wordpress.com/2011/04/05/mobile-web-media-queries/" target="_blank">Mobile Web 前端技術筆記(二): Media Queries 與 CSS</a></li>
+						</ul>
 					</section>
 				</section>
 			</div>
