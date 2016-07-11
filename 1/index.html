@@ -31,6 +31,12 @@
 		.reveal .slides section .fragment.current-fragment.highlight-yellow {
 			color: #e1ff1b;
 		}
+		.reveal .slides section .fragment.visible.highlight-yellow {
+			color: #e1ff1b;
+		}
+		.reveal .slides section .color.highlight-yellow {
+			color: #e1ff1b;
+		}
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -392,6 +398,9 @@
 						<ul>
 							<li>emmet</li>
 							<li>AutoFileName</li>
+							<li>HTMLBeautify</li>
+							<li>SideBarEnhancements</li>
+							<li>colorPicker</li>
 						</ul>
 						<div>
 							<a href="https://packagecontrol.io/browse">尋找套件</a>
@@ -462,16 +471,17 @@
 
 					<section>
 						<h2>HTML 長這樣</h2>
-						<pre><code data-trim data-noescape>
+						<pre><code>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
+	&lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;title&gt;一份迷你文件&lt;/title&gt;
 &lt;/head&gt;
-<mark>&lt;body&gt;</mark>
+&lt;mark&gt;&lt;body&gt;&lt;/mark&gt;
   &lt;h1&gt;文件中的主標題&lt;/h1&gt;
   &lt;p&gt;老媽我在這，我正在寫 &lt;abbr title=&quot;Hyper Text Markup Language&quot;&gt;HTML&lt;/abbr&gt;！&lt;/p&gt;
-<mark>&lt;/body&gt;</mark>
+&lt;mark&gt;&lt;/body&gt;&lt;/mark&gt;
 &lt;/html&gt;
 				    </code></pre>
 					<p><a href="https://codepen.io/" target="_blank">貼到 codepen 看看</a></p>
@@ -501,6 +511,121 @@
 &lt;input type=&quot;text&quot; name=&quot;name&quot; value=&quot;&quot;&gt;
 						</code></pre>
 					</section>
+				</section>
+
+				<!-- EMMET -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>EMMET</h2>
+						<img src="img/emmet.png" alt="" />
+					</section>
+
+					<section>
+						<h3>文件</h3>
+						<img src="img/emmet-doc.png" alt="" />
+						<p><a href="http://docs.emmet.io/cheat-sheet/" target="_blank">文件連結</a></p>
+					</section>
+
+					<section>
+						<h3>子元素: <</h3>
+						<p class="color highlight-yellow">nav>ul>li</p>
+						<pre><code data-trim>
+<nav>
+    <ul>
+        <li></li>
+    </ul>
+</nav>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>兄弟元素: +</h3>
+						<p class="color highlight-yellow">div+p+bq</p>
+						<pre><code data-trim>
+<div></div>
+<p></p>
+<blockquote></blockquote>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>群組: ()</h3>
+						<p class="color highlight-yellow">div>(header>ul>li*2>a)+footer>p</p>
+						<pre><code data-trim>
+<div>
+    <header>
+        <ul>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </ul>
+    </header>
+    <footer>
+        <p></p>
+    </footer>
+</div>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>乘法: *</h3>
+						<p class="color highlight-yellow">ul>li*5</p>
+						<pre><code data-trim>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>項目編號: $</h3>
+						<p class="color highlight-yellow">ul>li.item$*5</p>
+						<pre><code data-trim>
+<ul>
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+    <li class="item4"></li>
+    <li class="item5"></li>
+</ul>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>ID: #</h3>
+						<p class="color highlight-yellow">#header</p>
+						<pre><code data-trim>
+<div id="header"></div>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>CLASS: .</h3>
+						<p class="color highlight-yellow">.title</p>
+						<pre><code data-trim>
+<div class="title"></div>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>屬性: []</h3>
+						<p class="color highlight-yellow">p[title="Hello world"]</p>
+						<pre><code data-trim>
+<p title="Hello world"></p>
+						</code></pre>
+					</section>
+
+					<section>
+						<h3>文字: {}</h3>
+						<p class="color highlight-yellow">a{Click me}</p>
+						<pre><code data-trim>
+<a href="">Click me</a>
+						</code></pre>
+					</section>
+
 				</section>
 
 				<!-- HTML 標籤(Document) -->
