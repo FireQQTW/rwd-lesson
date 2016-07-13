@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>網站開發流程介紹</title>
+
+		<meta name="description" content="RWD 課程 - Day 1">
+		<meta name="author" content="Casper Lai">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<style media="screen">
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+		html, .reveal * {
+			font-family: "Noto Sans TC", sans-serif !important;
+		}
+		.reveal .slides section .fragment.current-fragment.highlight-current-yellow {
+			color: #e1ff1b;
+		}
+		.reveal .slides section .fragment.current-fragment.highlight-yellow {
+			color: #e1ff1b;
+		}
+		.reveal .slides section .fragment.visible.highlight-yellow {
+			color: #e1ff1b;
+		}
+		.reveal .slides section .color.highlight-yellow {
+			color: #e1ff1b;
+		}
+		.reveal .slides section .color.highlight-yellow2 {
+			color: #fff000;
+		}
+		.reveal .slides section .color.highlight-redd {
+			color: #ff0000;
+		}
+		.reveal .slides section .color.highlight-blue {
+			color: #0072ff;
+		}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<!-- Github -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>Github</h2>
+						<img src="img/github-logo.jpg" alt="" />
+					</section>
+
+					<section>
+						<h2>代碼管理服務</h2>
+						<img src="img/github-code.png" alt="" />
+					</section>
+
+					<section>
+						<h2>Github Pages</h2>
+						<h3>專案上的個人網頁</h3>
+						<p>
+							<a href="https://pages.github.com/" target="_blank">網站</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>Free (⊙０⊙) !??</h2>
+						<h3 class="fragment">是的，別懷疑。</h3>
+					</section>
+
+					<section>
+						<h3>適合...個人的自我介紹</h3>
+						<img src="img/profile.png" alt="" />
+					</section>
+				</section>
+
+				<!-- github pages -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>建立 Github Pages</h2>
+					</section>
+
+					<section>
+						<h2>1. 註冊 Github 帳號</h2>
+						<img src="img/signup.png" alt="" width="800" />
+						<p>
+							<a href="https://github.com/join?source=header-home" target="_blank">Github</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>2. 下載 Desktop APP</h2>
+						<img src="img/GitHubDesktop.png" alt="" width="750" />
+						<p>
+							<a href="https://desktop.github.com/" target="_blank">Github desktop</a>
+						</p>
+					</section>
+
+					<section>
+						<h2>3. 安裝並開啟 APP</h2>
+						<p>安裝完成APP後，開啟桌面 Github 程式(範例系統:Win 7)，並登入 Github 帳號。</p>
+						<img src="img/login.png" alt="" width="700" />
+					</section>
+
+					<section>
+						<h2>4. 建立/新增專案</h2>
+						<p>連結你的專案，或直接建立新專案。</p>
+						<img src="img/createProject.png" alt="" width="700" />
+					</section>
+
+					<section>
+						<h2>4. 建立分支(branch)</h2>
+						<p>在 Githu pages 中，分支名稱為"<span class="color highlight-yellow">gh-pages</span>"的分支為專案網頁用，預設底下的<span class="color highlight-yellow">index.html</span>為預設網頁。</p>
+						<img src="img/newBranch.png" alt="" width="700" />
+					</section>
+
+					<section>
+						<h2>5. 打包修改(Commit)</h2>
+						<p>在 <span class="color highlight-redd">紅框</span>選擇要打包的檔案，在 <span class="color highlight-yellow2">黃框</span>輸入這次打包的紀錄，按下<span class="color highlight-blue">藍框</span>內的"Commit to gh-pages"記錄起來。(注意: 此時還沒上到 Github)</p>
+						<img src="img/firstCommit.png" alt="" width="700" />
+					</section>
+
+					<section>
+						<h2>6. 更新至 Github</h2>
+						<p>點選 <span class="color highlight-yellow">Publish</span> ，填妥訊息後，按下"publish 專案名稱"，將打包的程式碼送至 Github。</p>
+						<img src="img/pushCreat.png" alt="" width="700" />
+					</section>
+
+					<section>
+						<h2>7. 檢查是否更新</h2>
+						<p>到 Github 上檢查是否有新增/更新自己的專案</p>
+						<img src="img/checkProject.png" alt="" width="700" />
+						<h3>完成!!!!!!!!</h3>
+					</section>
+
+					<section>
+						<h2>等~一~下~~~!! 網址咧?</h2>
+						<p class="fragment">格式: https://<span class="color highlight-yellow">{ 帳號 }</span>.github.io/ <span class="color highlight-yellow">{ 專案名稱 }</span> /</p>
+					</section>
+
+					<section>
+						<h2>範例</h2>
+						<ul>
+							<li>我的帳號：FireQQTW</li>
+							<li>我的專案：rwd-lesson</li>
+						</ul>
+						<p>連結: <a href="https://fireqqtw.github.io/rwd-lesson/ " target="_blank">https://fireqqtw.github.io/rwd-lesson/</a>
+						</p>
+					</section>
+				</section>
+
+				<!-- Q&A -->
+				<section data-transition="slide-in fade-out" >
+					<section>
+						<h2>Q&A</h2>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
